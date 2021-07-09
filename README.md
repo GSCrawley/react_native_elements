@@ -18,3 +18,15 @@
 ### ^ that code produced the following image:
 ### ![alt text](./images/banksycircle.jpeg)
 
+### Avatar as Button:
+
+  <Avatar
+			overlayContainerStyle={{backgroundColor: 'orange'}}
+			size='xlarge'
+			rounded
+			source={require('./images/banksy.jpeg')}
+            title="GC"
+            onPress={() => console.log("Works!")}
+            activeOpacity={0.2}
+
+			/>

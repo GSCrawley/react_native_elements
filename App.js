@@ -1,21 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { Image } from 'react-native';
+// import { Avatar } from 'react-native-elements';
+import LinearProgress from 'react-native-elements/dist/linearProgress/LinearProgress';
+LinearProgress;
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+  <SafeAreaProvider>
+    
+      <Image source={require('./images/banksy.jpeg')} 
+              style={{ width: 300, height: 300, borderRadius:150,
+                        margin: 80}}/>
+    
+    </SafeAreaProvider>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
